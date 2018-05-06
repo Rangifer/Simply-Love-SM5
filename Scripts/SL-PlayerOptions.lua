@@ -383,6 +383,17 @@ local Overrides = {
 		Values = function() return { "Standard", "Surround", "Vertical" } end,
 	},
 	-------------------------------------------------------------------------
+	LaneCover = {
+		LayoutType = "ShowOneInRow",
+		Choices = function()
+			local first	= 0
+			local last 	= 100
+			local step 	= 1
+
+			return stringify( range(first, last, step), "%g%%")
+		end,
+	},
+	-------------------------------------------------------------------------
 	ScreenAfterPlayerOptions = {
 		Values = function()
 			if SL.Global.MenuTimer.ScreenSelectMusic > 1 then
@@ -431,7 +442,7 @@ local Overrides = {
 				if list[2] then SL.Global.ScreenAfter.PlayerOptions2 = "ScreenPlayerOptions" end
 			end
 		end
-	}
+	},
 	-------------------------------------------------------------------------
 }
 
