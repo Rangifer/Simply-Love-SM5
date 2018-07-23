@@ -1,5 +1,6 @@
 local songs = {
 	Arrows = "cloud break",
+	Custards = "cloud break",
 	Bears = "crystalis",
 	Hearts = "feel",
 	Ducks = "Xuxa fami VRC6",
