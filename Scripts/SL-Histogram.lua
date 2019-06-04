@@ -47,7 +47,7 @@ NPS_Histogram = function(player, _w, _h)
 
 				-- Don't use Song:MusicLengthSeconds() because it includes time
 				-- at the beginning before beat 0 has occurred
-				local FirstSecond =  Song:GetFirstSecond()
+				local FirstSecond = TimingData:GetElapsedTimeFromBeat(0)
 				local LastSecond = Song:GetLastSecond()
 
 				-- magic numbers obtained from Photoshop's Eyedrop tool
@@ -65,7 +65,7 @@ NPS_Histogram = function(player, _w, _h)
 						-- subtract 1 from i now to get the actual measure number to calculate time
 						t = TimingData:GetElapsedTimeFromBeat((i-1)*4)
 
-						x = scale(t,  0, LastSecond, 0, _w)
+						x = scale(t, FirstSecond, LastSecond, 0, _w)
 						y = round(-1 * scale(nps, 0, PeakNPS, 0, _h))
 
 						-- if the height of this measure is the same as the previous two measures
