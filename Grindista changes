@@ -1,0 +1,24 @@
+Adding few features for Finnish FA-season/tournament.
+
+- Added different score% for Grindistä :D:D -reasons. This doesn't affect the proper score, so you can also make normal scores while grinding.
+- Division Icons next to score:
+99.9 = Grandmaster
+99.5 = Master
+99 = Diamond
+98 = Platinum
+96 = Gold
+90 = Silver
+85 = Bronze
+
+- Auto-restart for Grindistä for every point level. This uses Grindistä% and not the normal score%
+100(10.5p)
+99.90(10p)
+99.75(9p)
+99.5(8p)
+99(7p)
+98.5(6p)
+98(5p)
+97(4p)
+96(3p)
+92(2p)
+80(1p)
